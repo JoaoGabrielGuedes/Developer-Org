@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Lead_Quality__c</fullName>
+    <externalId>false</externalId>
+    <formula>CASE( Lead_Quality_Helper__c, 1,  IMAGE(&quot;/img/samples/stars_100.gif&quot;, &quot;1 star&quot;), 
+2, IMAGE(&quot;/img/samples/stars_200.gif&quot;, &quot;2 star&quot;),
+3, IMAGE(&quot;/img/samples/stars_300.gif&quot;, &quot;3 star&quot;),
+4, IMAGE(&quot;/img/samples/stars_400.gif&quot;, &quot;4 star&quot;),
+5, IMAGE(&quot;/img/samples/stars_500.gif&quot;, &quot;5 star&quot;),
+IMAGE(&quot;/img/samples/stars_000.gif&quot;, &quot;0 star&quot;))</formula>
+    <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+    <label>Lead Quality</label>
+    <required>false</required>
+    <type>Text</type>
+    <unique>false</unique>
+</CustomField>
