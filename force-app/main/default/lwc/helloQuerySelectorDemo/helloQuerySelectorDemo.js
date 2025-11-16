@@ -9,8 +9,8 @@ export default class HelloQuerySelectorDemo extends LightningElement {
     console.log(elem.innerText);
 
     const userElem = this.template.querySelectorAll('.name');    
-    Array.from(userElem).forEach((user) => {
-      console.log(user.innerText);
+    Array.from(userElem).forEach((item) => {
+      console.log(item.innerText);
       item.setAttribute("title", item.innerText);
     });
 
